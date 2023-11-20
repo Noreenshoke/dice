@@ -38,7 +38,7 @@ class RollDice extends Component {
           <Die dice={dice2} />
         </div>
         <center>
-          <button onClick={this.roll} disabled={rolling}>
+          <button class="button" onClick={this.roll} disabled={rolling}>
             Roll
           </button>
         </center>
