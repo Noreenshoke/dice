@@ -6,8 +6,6 @@ body {
   font-family: cursive;
   font-size: 100px;
   font-weight: bold;
-  
-
   color: #f5ac01;
   background-image: -webkit-linear-gradient(
     45deg,
@@ -19,6 +17,7 @@ body {
   -webkit-background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(255, 246, 76, 0.3);
 }
 
 .random {
