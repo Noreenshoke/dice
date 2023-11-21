@@ -1,0 +1,99 @@
+body {
+  background-image: url("/background/background.gif");
+}
+.App h1 {
+  font-style: normal;
+  font-family: cursive;
+  font-size: 100px;
+  font-weight: bold;
+  
+
+  color: #f5ac01;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f5ac01 45%,
+    #fa0f72 60%,
+    #9e58d1 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.random {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dice-container {
+  display: flex;
+}
+
+.dice {
+  font-size: 15rem;
+  margin: 5rem;
+
+  background: -webkit-linear-gradient(#fbf24e, #f5ac01);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rolling .dice {
+  animation: roll 1s ease-in-out infinite;
+}
+
+.button {
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: #ffc229;
+  box-shadow: #ff6314 0 -6px 8px inset;
+  transform: scale(1.125);
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
